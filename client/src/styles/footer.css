@@ -1,0 +1,143 @@
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+  background: #111111;
+  border-top: 1px solid rgba(255,255,255,0.06);
+  padding: 28px 40px;
+  margin-top: 60px;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* =========================
+   LEFT
+========================= */
+
+.footer-left {
+  flex: 1;
+}
+
+.footer-left h3 {
+  color: white;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-left p {
+  color: #9ca3af;
+  line-height: 1.7;
+  font-size: 0.95rem;
+  max-width: 320px;
+}
+
+/* =========================
+   LINKS
+========================= */
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #d1d5db;
+  text-decoration: none;
+  transition: 0.3s ease;
+  font-size: 0.95rem;
+}
+
+.footer-links a:hover {
+  color: white;
+}
+
+/* =========================
+   RIGHT
+========================= */
+
+.footer-right {
+  text-align: right;
+}
+
+.footer-right p {
+  color: white;
+  margin-bottom: 8px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.footer-right span {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 992px) {
+
+  .footer {
+    padding: 28px 24px;
+  }
+
+  .footer-container {
+    gap: 24px;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .footer {
+    padding: 30px 16px;
+    margin-top: 40px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .footer-left p {
+    max-width: 100%;
+    font-size: 0.92rem;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  .footer-links a {
+    font-size: 0.92rem;
+  }
+
+  .footer-right {
+    width: 100%;
+    text-align: left;
+  }
+
+  .footer-right p,
+  .footer-right span {
+    font-size: 0.9rem;
+  }
+
+}

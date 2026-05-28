@@ -1,0 +1,462 @@
+.track-page {
+  min-height: 100vh;
+  background: #0b0b0b;
+  color: white;
+  padding-bottom: 80px;
+  overflow-x: hidden;
+}
+
+/* HERO */
+
+.track-hero {
+  max-width: 760px;
+  margin: auto;
+  text-align: center;
+  padding: 90px 20px 45px;
+}
+
+.track-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(249, 115, 22, 0.1);
+
+  border: 1px solid rgba(249, 115, 22, 0.2);
+
+  color: #f97316;
+
+  font-size: 0.82rem;
+  font-weight: 600;
+
+  margin-bottom: 20px;
+}
+
+.track-hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.track-hero p {
+  color: #9ca3af;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* FORM */
+
+.ticket-form-container {
+  width: calc(100% - 32px);
+  max-width: 650px;
+
+  margin: auto;
+
+  background: #141414;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 24px;
+
+  padding: 34px;
+}
+
+.form-header {
+  margin-bottom: 28px;
+}
+
+.form-header h2 {
+  font-size: 1.6rem;
+  margin-bottom: 8px;
+}
+
+.form-header p {
+  color: #9ca3af;
+}
+
+.form-group {
+  margin-bottom: 22px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+
+  font-size: 0.92rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper svg {
+  position: absolute;
+  top: 50%;
+  left: 16px;
+
+  transform: translateY(-50%);
+
+  color: #7a7a7a;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 54px;
+
+  background: #1a1a1a;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 14px;
+
+  padding: 0 16px 0 48px;
+
+  color: white;
+
+  font-size: 0.94rem;
+
+  outline: none;
+
+  transition: 0.3s ease;
+}
+
+.input-wrapper input:focus {
+  border-color: #f97316;
+}
+
+.ticket-form-container button {
+  width: 100%;
+  height: 54px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  background: #f97316;
+
+  color: white;
+
+  font-size: 0.94rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  transition: 0.3s ease;
+}
+
+.ticket-form-container button:hover {
+  background: #ea580c;
+}
+
+/* DETAILS */
+
+.ticket-details-container {
+  width: calc(100% - 32px);
+  max-width: 900px;
+
+  margin: 36px auto 0;
+
+  background: #141414;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 24px;
+
+  padding: 36px;
+}
+
+/* HEADER */
+
+.ticket-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding-bottom: 24px;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.ticket-header-left {
+  flex: 1;
+}
+
+.ticket-label {
+  display: inline-block;
+
+  color: #9ca3af;
+
+  font-size: 0.82rem;
+
+  margin-bottom: 10px;
+}
+
+.ticket-header h2 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.ticket-status-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ticket-status-wrapper span {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.status-badge {
+  padding: 6px 14px;
+
+  border-radius: 999px;
+
+  font-size: 0.76rem;
+  font-weight: 600;
+}
+
+.status-badge.open {
+  background: rgba(59,130,246,0.12);
+  color: #60a5fa;
+}
+
+.status-badge.in-progress {
+  background: rgba(245,158,11,0.12);
+  color: #f59e0b;
+}
+
+.status-badge.closed {
+  background: rgba(34,197,94,0.12);
+  color: #22c55e;
+}
+
+/* GRID */
+
+.ticket-details-grid {
+  margin-top: 30px;
+}
+
+.detail-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 24px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.detail-row span {
+  color: #9ca3af;
+
+  font-size: 0.9rem;
+
+  min-width: 180px;
+}
+
+.detail-row p {
+  flex: 1;
+
+  text-align: right;
+
+  line-height: 1.6;
+
+  font-size: 0.95rem;
+}
+
+/* DESCRIPTION */
+
+.description-box {
+  margin-top: 34px;
+}
+
+.description-box h3 {
+  font-size: 1.08rem;
+  margin-bottom: 14px;
+}
+
+.description-box p {
+  color: #d1d5db;
+
+  line-height: 1.9;
+
+  font-size: 0.95rem;
+}
+
+/* NOTES */
+
+.notes-section {
+  margin-top: 42px;
+}
+
+.notes-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 22px;
+}
+
+.notes-header h3 {
+  font-size: 1.08rem;
+  margin-bottom: 6px;
+}
+
+.notes-header p {
+  color: #9ca3af;
+  font-size: 0.9rem;
+}
+
+.notes-header span {
+  color: #9ca3af;
+  font-size: 0.85rem;
+}
+
+.note-card {
+  display: flex;
+  gap: 14px;
+
+  padding: 18px 0;
+
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.note-line {
+  width: 3px;
+  border-radius: 999px;
+  background: #f97316;
+}
+
+.note-content {
+  flex: 1;
+}
+
+.note-content p {
+  color: #e5e7eb;
+
+  line-height: 1.8;
+
+  margin-bottom: 8px;
+
+  font-size: 0.94rem;
+}
+
+.note-content span {
+  color: #9ca3af;
+  font-size: 0.8rem;
+}
+
+.empty-note {
+  color: #9ca3af;
+  font-size: 0.92rem;
+}
+
+/* TABLET */
+
+@media (max-width: 768px) {
+
+  .track-hero {
+    padding: 70px 20px 35px;
+  }
+
+  .track-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .ticket-form-container,
+  .ticket-details-container {
+    width: calc(100% - 24px);
+    padding: 24px 20px;
+  }
+
+  .ticket-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 8px;
+  }
+
+  .detail-row span {
+    min-width: 100%;
+  }
+
+  .detail-row p {
+    width: 100%;
+    text-align: left;
+  }
+
+  .notes-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 480px) {
+
+  .track-hero {
+    padding: 60px 16px 30px;
+  }
+
+  .track-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .track-hero p {
+    font-size: 0.92rem;
+  }
+
+  .ticket-form-container,
+  .ticket-details-container {
+    width: calc(100% - 16px);
+
+    padding: 18px 14px;
+
+    border-radius: 18px;
+  }
+
+  .form-header h2 {
+    font-size: 1.35rem;
+  }
+
+  .ticket-header h2 {
+    font-size: 1.08rem;
+  }
+
+  .track-badge {
+    font-size: 0.72rem;
+  }
+
+  .input-wrapper input,
+  .ticket-form-container button {
+    height: 50px;
+  }
+
+  .description-box p,
+  .note-content p {
+    font-size: 0.9rem;
+  }
+}

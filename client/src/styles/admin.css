@@ -1,0 +1,305 @@
+/* =========================
+   PAGE
+========================= */
+
+.admin-login-page {
+  min-height: 100vh;
+  background: #0f0f0f;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+
+  padding: 120px 40px 70px;
+}
+
+/* =========================
+   LEFT SIDE
+========================= */
+
+.admin-left {
+  flex: 1;
+  max-width: 520px;
+}
+
+.admin-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 16px;
+
+  border-radius: 999px;
+
+  background: rgba(59,130,246,0.15);
+
+  color: #60a5fa;
+
+  font-size: 0.85rem;
+  font-weight: 600;
+
+  margin-bottom: 22px;
+}
+
+.admin-left h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.admin-left p {
+  color: #b0b0b0;
+  line-height: 1.8;
+  font-size: 1rem;
+}
+
+/* =========================
+   FEATURES
+========================= */
+
+.admin-features {
+  margin-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.feature-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+
+  background: #181818;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  padding: 18px;
+  border-radius: 18px;
+}
+
+.feature-card svg {
+  color: #60a5fa;
+  margin-top: 3px;
+  flex-shrink: 0;
+}
+
+.feature-card h4 {
+  margin-bottom: 6px;
+  font-size: 1rem;
+}
+
+.feature-card p {
+  color: #9ca3af;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+/* =========================
+   LOGIN BOX
+========================= */
+
+.admin-login-container {
+  width: 100%;
+  max-width: 460px;
+
+  background: #181818;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 24px;
+
+  padding: 40px 32px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.login-header p {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.admin-login-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+/* GROUP */
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-group label {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #d1d5db;
+}
+
+/* INPUT */
+
+.input-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  height: 56px;
+
+  background: #111111;
+
+  border: 1px solid rgba(255,255,255,0.06);
+
+  border-radius: 14px;
+
+  padding: 0 16px;
+}
+
+.input-wrapper svg {
+  color: #9ca3af;
+  flex-shrink: 0;
+}
+
+.input-wrapper input {
+  width: 100%;
+  height: 100%;
+
+  border: none;
+  outline: none;
+
+  background: transparent;
+
+  color: white;
+
+  font-size: 0.95rem;
+}
+
+.input-wrapper input::placeholder {
+  color: #6b7280;
+}
+
+/* =========================
+   BUTTON
+========================= */
+
+.admin-login-container button {
+  height: 56px;
+
+  border: none;
+  border-radius: 14px;
+
+  background: white;
+  color: black;
+
+  font-size: 0.96rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 8px;
+}
+
+.admin-login-container button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media screen and (max-width: 992px) {
+
+  .admin-login-page {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 40px;
+
+    padding: 110px 24px 60px;
+  }
+
+  .admin-left {
+    max-width: 100%;
+  }
+
+  .admin-login-container {
+    max-width: 100%;
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media screen and (max-width: 768px) {
+
+  .admin-login-page {
+    padding: 90px 16px 50px;
+    gap: 30px;
+  }
+
+  .admin-left h1 {
+    font-size: 2rem;
+  }
+
+  .admin-left p {
+    font-size: 0.94rem;
+  }
+
+  .feature-card {
+    padding: 16px;
+  }
+
+  .admin-login-container {
+    padding: 28px 20px;
+    border-radius: 20px;
+  }
+
+  .login-header h2 {
+    font-size: 1.7rem;
+  }
+
+  .login-header p {
+    font-size: 0.9rem;
+  }
+
+  .input-wrapper {
+    height: 54px;
+  }
+
+  .input-wrapper input {
+    font-size: 0.92rem;
+  }
+
+  .admin-login-container button {
+    height: 54px;
+    font-size: 0.92rem;
+  }
+
+}
