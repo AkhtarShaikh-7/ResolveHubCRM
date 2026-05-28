@@ -7,9 +7,9 @@ A modern full-stack CRM (Customer Relationship Management) and support ticket ma
 
 # Live Demo
 
-Frontend: https://your-frontend-url.onrender.com
+Frontend: https://resolvehubcrm.onrender.com/
 
-Backend API: https://your-backend-url.onrender.com
+Backend API: https://resolvehubcrm-backend.onrender.com
 
 ---
 
@@ -125,7 +125,7 @@ ResolveHub/
 ## Clone Repository
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/AkhtarShaikh-7/ResolveHubCRM
 ```
 
 ---
