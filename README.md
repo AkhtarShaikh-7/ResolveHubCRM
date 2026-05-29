@@ -95,7 +95,6 @@ MongoDB Atlas Database
 # Folder Structure
 
 ```txt
-```
 ResolveHub/
 │
 ├── client/                          # Frontend - React Application
@@ -130,6 +129,7 @@ point
 ├── .gitignore                      # Ignored files (node_modules, .env)
 ├── README.md                       # Project documentation
 
+```
 ---
 
 # Installation & Setup
