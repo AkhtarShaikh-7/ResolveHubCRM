@@ -163,7 +163,7 @@ export const logoutAdmin = async (req, res) => {
       httpOnly: true,
       secure: true,
       sameSite: "None",
-      expires: new Date(0), // 👈 THIS CLEARS COOKIE
+      expires: new Date(0), 
     });
 
     return res.status(200).json({
