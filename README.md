@@ -173,6 +173,7 @@ CORS_ORIGIN=http://localhost:5173
 npm run dev
 ```
 ```txt
+Backend runs on:
 http://localhost:3000
 ```
 # 🔐 Admin Access Setup
@@ -217,13 +218,11 @@ To make evaluation easier for recruiters or reviewers, you may optionally seed t
 Email: admin@gmail.com
 Password: admin@123
 
-Backend runs on:
-
 ---
 
 # Frontend Setup
 
-## Navigate to Client
+## Navigate to client
 
 ```bash
 cd client
