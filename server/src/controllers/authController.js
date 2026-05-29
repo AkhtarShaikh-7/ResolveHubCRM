@@ -160,9 +160,10 @@ export const loginAdmin = async (req, res) => {
 export const logoutAdmin = async (req, res) => {
   try {
 
-    res.cookie("token", "", {
+    res.cookie("token", {
       httpOnly: true,
-      expires: new Date(0),
+      secure: true,
+      sameSite: "None",
     });
 
     res.status(200).json({

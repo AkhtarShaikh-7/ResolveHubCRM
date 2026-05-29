@@ -228,51 +228,33 @@ export default function TicketDetails() {
     </div>
 
     {/* UPDATE STATUS */}
+<div className="simple-box">
 
-    <div className="simple-box">
+  <h3>Update Ticket Status</h3>
 
-      <h3>
-        Update Ticket Status
-      </h3>
+  <div className="status-update">
 
-      <div className="status-update">
+    <div className="status-select-wrapper">
 
-        <select
-          value={status}
-          onChange={(e) =>
-            setStatus(e.target.value)
-          }
-        >
-
-          <option value="Open">
-            Open
-          </option>
-
-          <option value="In Progress">
-            In Progress
-          </option>
-
-          <option value="Closed">
-            Closed
-          </option>
-
-        </select>
-
-        <button
-          onClick={handleStatusUpdate}
-        >
-
-          {
-            statusLoading
-              ? "Updating..."
-              : "Update Status"
-          }
-
-        </button>
-
-      </div>
+      <select
+        className="status-select"
+        value={status}
+        onChange={(e) => setStatus(e.target.value)}
+      >
+        <option value="Open">Open</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Closed">Closed</option>
+      </select>
 
     </div>
+
+    <button onClick={handleStatusUpdate}>
+      {statusLoading ? "Updating..." : "Update Status"}
+    </button>
+
+  </div>
+
+</div>
 
     {/* ADD NOTE */}
 

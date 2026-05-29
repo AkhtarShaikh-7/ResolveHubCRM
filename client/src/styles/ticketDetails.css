@@ -141,8 +141,32 @@
 
 .status-update {
   display: flex;
-
   gap: 16px;
+  align-items: stretch;
+}
+
+/* wrapper fixes ALL browser issues */
+.status-select-wrapper {
+  flex: 1;
+  min-width: 0;
+}
+
+.status-select {
+  width: 100%;
+  height: 54px;
+
+  background: #0f0f0f;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+
+  color: white;
+  font-size: 0.95rem;
+
+  padding: 0 14px;
+
+  outline: none;
+  display: flex;
+  align-items: center;
 }
 
 .status-update select {
@@ -297,26 +321,35 @@
 
 /* MOBILE */
 
+/* MOBILE FIX ONLY */
+
 @media screen and (max-width: 500px) {
 
-  .ticket-details-page {
-    padding: 24px 14px 60px;
+  .status-update {
+    flex-direction: column;
+    gap: 12px;
   }
 
-  .details-header h1 {
-    font-size: 1.5rem;
+  .status-update select {
+    width: 100%;
+    height: 52px;
+    font-size: 16px;
+    /* prevents iOS zoom bug */
+    padding: 0 14px;
   }
 
-  .simple-box,
-  .details-section {
-    border-radius: 16px;
+  .status-update button {
+    width: 100%;
+    height: 52px;
+  }
+    .status-select {
+    height: 52px;
+    font-size: 16px; /* FIX iOS zoom issue */
+    padding: 0 14px;
   }
 
-  .simple-box {
-    padding: 18px;
-  }
-
-  .detail-row {
-    padding: 18px;
+  .status-update button {
+    width: 100%;
+    height: 52px;
   }
 }

@@ -81,7 +81,7 @@ export default function Home() {
       <div className="home-container">
 
         {/* HERO SECTION */}
-
+ 
         <section className="hero-section">
 
           <div className="hero-content">

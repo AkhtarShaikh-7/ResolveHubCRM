@@ -12,7 +12,7 @@
   max-width: 760px;
   margin: auto;
   text-align: center;
-  padding: 90px 20px 45px;
+  padding: 30px 20px 45px;
 }
 
 .track-badge {
@@ -418,7 +418,7 @@
 @media (max-width: 480px) {
 
   .track-hero {
-    padding: 60px 16px 30px;
+    padding: 30px 16px 30px;
   }
 
   .track-hero h1 {

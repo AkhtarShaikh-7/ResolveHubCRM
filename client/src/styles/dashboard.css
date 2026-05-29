@@ -4,7 +4,7 @@
 
 .dashboard-page {
   min-height: 100vh;
-  padding: 110px 40px 70px;
+  padding: 30px 40px 70px;
   background: #0f0f0f;
   color: white;
 }
@@ -280,7 +280,7 @@
 @media screen and (max-width: 768px) {
 
   .dashboard-page {
-    padding: 90px 14px 50px;
+    padding: 30px 14px 50px;
   }
 
   /* TOP */
