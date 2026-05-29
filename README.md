@@ -2,7 +2,6 @@
 
 A modern full-stack CRM (Customer Relationship Management) and support ticket management system built using the MERN stack. ResolveHub allows customers to raise support tickets and track their issues while admins can manage, review, update, and resolve customer problems through a professional dashboard.
 
-
 ---
 
 # Live Demo
@@ -129,6 +128,7 @@ ResolveHub/
 ├── .gitignore                      # Ignored files (node_modules, .env)
 └── README.md                       # Project documentation
 ```
+
 ---
 
 # Installation & Setup
@@ -172,10 +172,14 @@ CORS_ORIGIN=http://localhost:5173
 ```bash
 npm run dev
 ```
+
 ```txt
 Backend runs on:
 http://localhost:3000
 ```
+
+---
+
 # 🔐 Admin Access Setup
 
 This project does not include a frontend registration page for admin users.
@@ -198,31 +202,40 @@ You can create an admin account using Postman or any API testing tool.
   "email": "admin@example.com",
   "password": "admin123"
 }
+```
 
-📌 Steps to Test
+### 📌 Steps to Test
+
 1. Open Postman
 2. Set method to POST
 3. Enter API URL:
 
+```txt
 http://localhost:3000/api/auth/register
+```
 
 4. Add JSON body (as shown above)
 5. Send request
 6. Admin account will be created successfully
 
-🔐 Option 2: Demo Admin Credentials (For Recruiters / Quick Testing)
+---
+
+## 🔐 Option 2: Demo Admin Credentials (For Recruiters / Quick Testing)
 
 To make evaluation easier for recruiters or reviewers, you may optionally seed the database with a default admin user.
 
-📌 Demo Credentials
-Email: admin@gmail.com
+### 📌 Demo Credentials
+
+```txt
+Email:    admin@gmail.com
 Password: admin@123
+```
 
 ---
 
 # Frontend Setup
 
-## Navigate to client
+## Navigate to Client
 
 ```bash
 cd client
@@ -246,9 +259,8 @@ VITE_API_URL=http://localhost:5000/api
 npm run dev
 ```
 
-Frontend runs on:
-
 ```txt
+Frontend runs on:
 http://localhost:5173
 ```
 
@@ -345,7 +357,7 @@ This project demonstrates:
 
 # Author
 
-Akhtar Shaikh
+**Akhtar Shaikh**
 
 LinkedIn: https://linkedin.com/in/akhtarshaikh07
 
