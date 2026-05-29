@@ -100,35 +100,34 @@ ResolveHub/
 ├── client/                          # Frontend - React Application
 │   ├── public/                      # Static assets
 │   ├── src/                        # Main source code
-│   │   ├── api/                    # Axios/API calls
+│   │   ├── api/                    # Axios / API calls
 │   │   ├── components/             # Reusable UI components
 │   │   ├── pages/                  # Page-level components
-│   │   ├── context/                # Auth & global state
+│   │   ├── context/                # Auth & global state management
 │   │   ├── styles/                 # CSS files
 │   │   └── App.jsx                 # Root component
 │   │
-│   ├── .env.example                # Frontend environment template
+│   ├── .env.example                # Frontend environment variables template
 │   ├── package.json                # Frontend dependencies
 │   └── vite.config.js             # Vite configuration
 │
 ├── server/                          # Backend - Express API
 │   ├── src/
-│   │   ├── config/                 # DB connection & config files
-│   │   ├── controllers/            # Business logic (auth, tickets)
-│   │   ├── middleware/             # Auth & error handling middleware
+│   │   ├── config/                 # Database connection & config files
+│   │   ├── controllers/            # Business logic (auth, tickets, etc.)
+│   │   ├── middleware/             # Auth, error handling middleware
 │   │   ├── models/                 # Mongoose schemas
 │   │   ├── routes/                 # API routes
 │   │   ├── utils/                  # Helper functions (JWT, etc.)
-│   │   └── app.js                  # Express app setup
-│   └── server.js                  # Entry 
+│   │   ├── app.js                  # Express app setup
+│   │   └── server.js              # Entry point (starts server)
 │   │
-│   ├── .env.example                # Backend environment template
+│   ├── .env.example                # Backend environment variables template
 │   ├── package.json                # Backend dependencies
-point
+│   └── nodemon.json (optional)     # Dev config (optional)
 │
 ├── .gitignore                      # Ignored files (node_modules, .env)
-├── README.md                       # Project documentation
-
+└── README.md                       # Project documentation
 ```
 ---
 
