@@ -95,28 +95,40 @@ MongoDB Atlas Database
 # Folder Structure
 
 ```txt
+```
 ResolveHub/
 │
-├── client/                  # Frontend React Application
-│   ├── public/
-│   ├── src/
-│   ├── .env.example
-│   └── package.json
-│
-├── server/                  # Backend Express API
-│   ├── src/                 # Backend Source Code
-│   │   ├── config/          # Database & Environment Configurations
-│   │   ├── controllers/     # Route Controller Functions
-│   │   ├── middleware/      # Custom Middlewares (Auth, Error handling)
-│   │   ├── models/          # Mongoose Database Schemas
-│   │   └── routes/          # Express API Route Definitions
+├── client/                          # Frontend - React Application
+│   ├── public/                      # Static assets
+│   ├── src/                        # Main source code
+│   │   ├── api/                    # Axios/API calls
+│   │   ├── components/             # Reusable UI components
+│   │   ├── pages/                  # Page-level components
+│   │   ├── context/                # Auth & global state
+│   │   ├── styles/                 # CSS files
+│   │   └── App.jsx                 # Root component
 │   │
-│   ├── .env.example         # Backend Environment Template
-│   └── package.json         # Backend Dependencies & Scripts
+│   ├── .env.example                # Frontend environment template
+│   ├── package.json                # Frontend dependencies
+│   └── vite.config.js             # Vite configuration
 │
-├── .gitignore               # Ignored Git Files (node_modules, .env)
-└── README.md                # Project Documentation
-```
+├── server/                          # Backend - Express API
+│   ├── src/
+│   │   ├── config/                 # DB connection & config files
+│   │   ├── controllers/            # Business logic (auth, tickets)
+│   │   ├── middleware/             # Auth & error handling middleware
+│   │   ├── models/                 # Mongoose schemas
+│   │   ├── routes/                 # API routes
+│   │   ├── utils/                  # Helper functions (JWT, etc.)
+│   │   └── app.js                  # Express app setup
+│   └── server.js                  # Entry 
+│   │
+│   ├── .env.example                # Backend environment template
+│   ├── package.json                # Backend dependencies
+point
+│
+├── .gitignore                      # Ignored files (node_modules, .env)
+├── README.md                       # Project documentation
 
 ---
 
