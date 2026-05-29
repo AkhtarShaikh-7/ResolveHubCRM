@@ -161,12 +161,52 @@ CORS_ORIGIN=http://localhost:5173
 ```bash
 npm run dev
 ```
-
-Backend runs on:
-
 ```txt
 http://localhost:3000
 ```
+# 🔐 Admin Access Setup
+
+This project does not include a frontend registration page for admin users.
+
+This is a **security decision** to prevent unauthorized creation of admin accounts from the UI.
+
+---
+
+## 🧪 Option 1: Create Admin via API (Recommended for Developers)
+
+You can create an admin account using Postman or any API testing tool.
+
+### POST /api/auth/register
+
+### 📌 Request Body
+
+```json
+{
+  "name": "Admin User",
+  "email": "admin@example.com",
+  "password": "admin123"
+}
+
+📌 Steps to Test
+1. Open Postman
+2. Set method to POST
+3. Enter API URL:
+
+http://localhost:3000/api/auth/register
+
+4. Add JSON body (as shown above)
+5. Send request
+6. Admin account will be created successfully
+
+🔐 Option 2: Demo Admin Credentials (For Recruiters / Quick Testing)
+
+To make evaluation easier for recruiters or reviewers, you may optionally seed the database with a default admin user.
+
+📌 Demo Credentials
+Email: admin@gmail.com
+Password: admin@123
+
+Backend runs on:
 
 ---
 
