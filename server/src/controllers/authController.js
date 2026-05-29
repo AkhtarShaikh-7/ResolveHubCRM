@@ -159,15 +159,14 @@ export const loginAdmin = async (req, res) => {
 // LOGOUT ADMIN
 export const logoutAdmin = async (req, res) => {
   try {
-
-    res.cookie("token", {
+    res.cookie("token", "", {
       httpOnly: true,
       secure: true,
       sameSite: "None",
-      
+      expires: new Date(0), // 👈 THIS CLEARS COOKIE
     });
 
-    res.status(200).json({
+    return res.status(200).json({
       success: true,
       message: "Logout successful",
     });
